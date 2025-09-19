@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Panqueca com banana e mel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #fcc75c; /* Fundo amarelo suave */
+      font-family: 'Georgia', serif;
+      margin: 0; /* sem espaçamento extra */
+    }
+
+    /* 🔘 Botão voltar estilizado */
+    .back-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1100; /* acima do header */
+      
+      background-color: transparent;
+      color: #fafafa;
+      border: 2px solid #fdfcfc;
+      padding: 8px 14px;
+      border-radius: 8px;
+      
+      font-size: 15px;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #fff;
+      color: black;
+      transform: translateY(-2px);
+    }
+
+    /* 🔝 Header fixo no topo */
+    header {
+      background-color: #d62828;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      left: 0;
+      z-index: 1000;
+    }
+
+    /* Footer fixo no rodapé */
+    footer {
+      background-color: #d62828;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      z-index: 1000;
+    }
+
+    /* Conteúdo central com grid */
+    .conteudo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh; /* ocupa a tela toda */
+      padding: 80px 20px 60px; /* espaço só para não sobrepor header/footer */
+      box-sizing: border-box;
+    }
+
+    .conteudo img {
+      width: 100%;
+      max-width: 380px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      margin-right: 40px;
+    }
+
+    .texto {
+      max-width: 500px;
+    }
+
+    .texto h2 {
+      color: #d62828;
+      margin-bottom: 15px;
+    }
+
+    .texto p {
+      margin-bottom: 20px;
+    }
+
+    .texto ul {
+      padding-left: 20px;
+    }
+
+    /* 📱 Responsivo: imagem em cima e texto embaixo */
+    @media (max-width: 768px) {
+      .conteudo {
+        flex-direction: column;
+        padding: 100px 20px 80px;
+        text-align: center;
+      }
+      .conteudo img {
+        margin: 0 0 20px;
+      }
+      .texto {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header fixo -->
+  <header>
+    <h1> Panquecas da Zanzan</h1>
+  </header>
+
+  <!-- 🔘 Botão voltar -->
+  <a href="index.html" class="back-btn">⬅ Voltar</a>
+  
+  <!-- Conteúdo principal -->
+  <div class="conteudo">
+    <img src="img/CSC_0610[1].JPG" alt="Panqueca com banana e mel">
+    <div class="texto">
+      <h2>Panqueca de Presunto com queijo</h2>
+      <p>Uma panqueca macia feita com massa caseira,recheada com fatias suculentas de presunto e queijo mussarela 
+         , combinados ao toque especial do parmesão.
+          Finalizada com um delicioso molho de tomate caseiro,
+           temperado com azeite, salsinha, orégano
+            e uma pitada de sal, resulta em uma panqueca irresistível
+            e cheia de sabor em cada garfada..</p>
+      <h4>Ingredientes:</h4>
+    
+  <ul style="columns: 2; -webkit-columns: 2; -moz-columns: 2;">
+  <li>Queijo mussarela</li>
+  <li>Presunto</li>
+  <li>Leite</li>
+  <li>Ovo</li>
+  <li>Farinha de trigo</li>
+  <li>Fermento</li>
+  <li>Queijo parmesão</li>
+  <li>Azeite</li>
+  <li>Molho de tomate</li>
+  <li>Salsinha</li>
+  <li>Orégano</li>
+  <li>Sal</li>
+   </ul>
+
+
+    </div>
+  </div>
+
+  <!-- Footer fixo -->
+  <footer>
+    <p>&copy; 2025 Panquecas da Zanzan</p>
+  </footer>
+</body>
+</html>

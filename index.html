@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Panquecas da Zanzan</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+
+</head>
+<body>
+
+  <div class="cart-container" id="cart-container">
+    <i class="fas fa-shopping-cart cart-icon"></i>
+    <span class="cart-count" id="cart-count">0</span>
+  </div>
+
+  <div class="cart-sidebar" id="cart-sidebar">
+      <div class="cart-header">
+          <h3>Meu Pedido</h3>
+          <span id="close-cart">&times;</span>
+      </div>
+      <ul id="cart-items">
+          </ul>
+      <div class="cart-footer">
+          <div class="cart-total">
+              <span>Total:</span>
+              <span id="cart-total">R$ 0,00</span>
+          </div>
+          <button id="btn-finalize">
+              <i class="fab fa-whatsapp"></i> Finalizar Pedido
+          </button>
+      </div>
+  </div>
+
+
+  <header>
+    <h1> Panquecas da Zanzan</h1>
+    <p>As melhores panquecas da cidade!</p>
+  </header>
+
+  <div id="carouselPanquecas" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+    <div class="carousel-inner">
+      <div class="carousel-item active"><img src="img/DSC_0595[1] - Copia.jpg" alt="Panqueca com calda" /></div>
+      <div class="carousel-item"><img src="img/CSC_0620[1].JPG"alt="Panqueca com morango" /></div>
+      <div class="carousel-item"><img src="img/CSC_0610[1].JPG" alt="Panqueca com chocolate" /></div>
+        <div class="carousel-item"><img src="img/DSC_0597[1] - Copia.jpg" alt="Panqueca com banana e mel" /></div>
+        <div class="carousel-item"><img src="img/Imagem do WhatsApp de 2025-09-13 à(s) 11.27.12_b5192a0e.jpg" alt="Panqueca com banana e mel" /></div>
+         <div class="carousel-item"><img src="img/Imagem do WhatsApp de 2025-09-13 à(s) 11.46.11_c36f39b9.jpg" alt="Panqueca com chocolate" /></div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPanquecas" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselPanquecas" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+  </div>
+
+
+   <div class="container">
+    <h2 class="galeria-titulo">Nossa Galeria de Panquecas</h2>
+    <div class="row">
+
+      <div class="col-md-6 mb-4">
+        <a href="p2.html">
+          <img src="img/CSC_0610[1].JPG" alt="Panqueca de Carne moída" class="galeria-img">
+        </a>
+        <div class="produto-info">
+            <p class="descricao-img"> Panqueca de Presunto com queijo</p>
+            <p class="produto-preco">R$ 20,00</p>
+            <button class="btn btn-adicionar" data-nome="Panqueca de Carne" data-preco="20.00">
+                <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+            </button>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <a href="p1.html">
+          <img src="img/DSC_0597[1] - Copia.jpg " alt="Panqueca de Presunto com queijo" class="galeria-img">
+        </a>
+        <div class="produto-info">
+            <p class="descricao-img">Panqueca de Carne moída com cenoura</p>
+            <p class="produto-preco">R$ 20,00</p>
+            <button class="btn btn-adicionar" data-nome="Panqueca de Presunto e Queijo" data-preco="20.00">
+                <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+            </button>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <a href="p3.html">
+          <img src="img/Imagem do WhatsApp de 2025-09-13 à(s) 11.27.12_b5192a0e.jpg" alt="Panqueca de Frango" class="galeria-img">
+        </a>
+        <div class="produto-info">
+            <p class="descricao-img">Panqueca de Frango com Catupiry</p>
+            <p class="produto-preco">R$ 20,00</p>
+            <button class="btn btn-adicionar" data-nome="Panqueca de Frango com Catupiry" data-preco="20.00">
+                <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+            </button>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <a href="p4.html">
+          <img src="img/Imagem do WhatsApp de 2025-09-13 à(s) 11.46.11_c36f39b9.jpg" alt="Panqueca de Frango ao Curry" class="galeria-img">
+        </a>
+        <div class="produto-info">
+            <p class="descricao-img">Panqueca De Frango ao Curry</p>
+            <p class="produto-preco">R$ 20,00</p>
+            <button class="btn btn-adicionar" data-nome="Panqueca de Frango ao Curry" data-preco="20.00">
+                <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+            </button>
+        </div>
+      </div>
+      <!-- <div class="col-md-6 mb-4">
+        <a href="p5.html">
+          <img src="img/CSC_0620[1].JPG" alt="Panqueca de Frango ao Curry" class="galeria-img">
+        </a>
+        <div class="produto-info">
+            <p class="descricao-img">Panqueca De Frango ao Curry</p>
+            <p class="produto-preco">R$ 26,00</p>
+            <button class="btn btn-adicionar" data-nome="Panqueca de Frango ao Curry" data-preco="26.00">
+                <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+            </button>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <a href="p6.html">
+          <img src="img//DSC_0595[1] - Copia.jpg" alt="Panqueca de Frango ao Curry" class="galeria-img">
+        </a>
+        <div class="produto-info">
+            <p class="descricao-img">Panqueca De Frango ao Curry</p>
+            <p class="produto-preco">R$ 26,00</p>
+            <button class="btn btn-adicionar" data-nome="Panqueca de Frango ao Curry" data-preco="26.00">
+                <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+            </button>
+        </div>
+      </div> -->
+    </div>
+</div>
+
+  <footer>
+    
+    <p>&copy; 2025 Panquecas da Zanzan — Feito com ❤ e muita calda!</p>
+  </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
