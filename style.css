@@ -168,7 +168,7 @@ header h1 {
 .cart-icon {
     font-size: 2.5rem;
     color: white;
-    background-color: #d62828;
+    background-color: none;
     border-radius: 50%;
     padding: 10px;
     box-shadow: none;
@@ -338,6 +338,12 @@ header h1 {
         width: 90%;
         right: -100%; /* Garante que saia totalmente da tela */
     }
+    .instagram-icon {
+        top: 10px;
+      left:10px;
+        font-size: 2.5rem;
+        width: 35px;
+    }
 }
 
 /* Para celulares menores */
@@ -352,12 +358,20 @@ header h1 {
         height: 150px;
     }
     .cart-icon {
-        font-size: 2rem;
-        padding: 8px;
+        font-size: 1.5rem;
+        padding: 5px;
+        right: 10px;
     }
     .cart-count {
-        width: 24px;
+        width: 20px;
         height: 24px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+    }
+    .instagram-icon {
+        top: 10px;
+        left:10px;
+        font-size: 2rem;
+        width: 30px;
+        align-items:left;
     }
 }
