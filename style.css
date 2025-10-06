@@ -4,174 +4,61 @@ body {
     font-family: 'Georgia', serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial Black', sans-serif;
+}
+
 /* 🎨 Cabeçalho */
 header {
+    position: relative; /* Necessário para posicionar o contêiner de ícones */
     background-color: #d62828;
     color: white;
     padding: 20px 15px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
-.header-logo {
-    height: 60px; /* Ajuste a altura conforme necessário */
-    width: auto; /* Mantém a proporção */
-    border-radius: 50%; /* Opcional: para deixar a logo redonda */
-    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
-    margin-right: 15px;
-  justify-self: left;
-}
-
-/* 🎨 Rodapé */
-footer {
-    background-color: #d62828;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 50px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Arial Black', sans-serif;
-}
 
 header h1 {
     margin: 0;
 }
 
-.instagram-icon {
+
+.header-actions {
     position: absolute;
-    top: 13px;
-    right: 50px;
-    cursor: pointer;
-    z-index: 1050;
-     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    color:#fff;
-    font-size: 3rem;
-}
-.aviso { 
-    text-align: center;
-    color: #d62828;
-    font-family: 'Georgia', serif;
-    margin-top: 1px;
-    font-size: 18px;
-}
-
-
-/* 🔥 Carrossel */
-#carouselPanquecas {
-    max-width: 850px;
-    margin: 40px auto;
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-.carousel-item img {
-    height: 400px;
-    max-width: 90%;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
     top: 50%;
+    right: 20px;
     transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    background: rgba(255,255,255,0.9);
-}
-
-/* 🎨 Galeria */
-.galeria-img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease;
-}
-
-.galeria-img:hover {
-    transform: scale(1.05);
-}
-
-.descricao-img {
-    text-align: center;
-    margin-top: 8px;
-    font-style: italic;
-    font-size: 14px;
-    background: #f5f5f5;
-    padding: 6px;
-    border-top: 2px solid #ccc;
-    letter-spacing: 0.5px;
-}
-
-.produto-info {
-    background-color: white;
-    padding: 15px;
-    border-radius: 0 0 8px 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    text-align: center;
-}
-
-.produto-preco {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #007f5f;
-}
-
-.btn-adicionar {
-    background-color: #fca311;
-    border: none;
-    color: white;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.btn-adicionar:hover {
-    background-color: #e85d04;
-    color: white;
-}
-
-.galeria-titulo {
-    margin: 40px 0 20px;
-    text-align: center;
-    color: #d62828;
-}
-
-/* 🛒 Estilos do Carrinho de Compras (MODIFICADO E CORRIGIDO) */
-.cart-container {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
+    gap: 15px; /* Espaçamento entre todos os ícones */
     z-index: 1050;
-     display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+
+.social-icon {
+    color: #fff;
+    font-size: 2.5rem;
+    transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.ifood-icon img {
+    width: 45px;
+    height: auto;
+}
+
+/* 🛒 Estilos do Carrinho */
+.cart-container {
+    position: relative; /* Posição relativa para o contador */
+    cursor: pointer;
 }
 
 .cart-icon {
     font-size: 2.5rem;
     color: white;
-    background-color: none;
-    border-radius: 50%;
-    padding: 10px;
-    box-shadow: none;
     transition: transform 0.2s ease;
 }
 
@@ -181,8 +68,8 @@ header h1 {
 
 .cart-count {
     position: absolute;
-    top: -5px;
-    right: -5px;
+    top: -8px;
+    right: -12px;
     background-color: #fca311; 
     color: white;
     border-radius: 50%;
@@ -193,21 +80,101 @@ header h1 {
     align-items: center;
     font-size: 1rem;
     font-weight: bold;
-    border: none;
+    border: 2px solid #d62828; 
 }
 
-/* Animação do carrinho */
+
+
+.aviso { 
+    text-align: center;
+    color: #d62828;
+    font-family: 'Georgia', serif;
+    margin-top: 1px;
+    font-size: 18px;
+}
+
+/* 🔥 Carrossel */
+#carouselPanquecas {
+    max-width: 850px;
+    margin: 40px auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.carousel-item img {
+    height: 400px;
+    max-width: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.galeria-titulo {
+    margin: 40px 0 20px;
+    text-align: center;
+    color: #d62828;
+}
+.galeria-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+.galeria-img:hover {
+    transform: scale(1.05);
+}
+.produto-info {
+    background-color: white;
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    text-align: center;
+    margin-top: -8px;
+}
+.descricao-img {
+    text-align: center;
+    margin-top: 8px;
+    font-style: italic;
+    font-size: 14px;
+}
+.produto-preco {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007f5f;
+}
+.btn-adicionar {
+    background-color: #fca311;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.btn-adicionar:hover {
+    background-color: #e85d04;
+    color: white;
+}
+
+/* 🛒 Animação e Aba Lateral do Carrinho */
 .cart-shake {
     animation: shake 0.5s;
 }
-
 @keyframes shake {
     0%, 100% { transform: translateX(0); }
     10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
     20%, 40%, 60%, 80% { transform: translateX(5px); }
 }
-
-/* 🛒 Aba Lateral de Finalizar Pedido */
 .cart-sidebar {
     position: fixed;
     top: 0;
@@ -221,11 +188,9 @@ header h1 {
     display: flex;
     flex-direction: column;
 }
-
 .cart-sidebar.open {
     right: 0;
 }
-
 .cart-header {
     padding: 20px;
     background-color: #d62828;
@@ -234,23 +199,19 @@ header h1 {
     justify-content: space-between;
     align-items: center;
 }
-
 .cart-header h3 {
     margin: 0;
 }
-
 #close-cart {
     cursor: pointer;
     font-size: 1.5rem;
 }
-
 #cart-items {
     list-style: none;
     padding: 20px;
     flex-grow: 1;
     overflow-y: auto;
 }
-
 .cart-item {
     display: flex;
     justify-content: space-between;
@@ -258,12 +219,10 @@ header h1 {
     padding: 10px 0;
     border-bottom: 1px solid #eee;
 }
-
 .cart-item .item-info {
     display: flex;
     flex-direction: column;
 }
-
 .remove-btn {
     background-color: #ff4d4d;
     color: white;
@@ -273,22 +232,11 @@ header h1 {
     height: 24px;
     font-weight: bold;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2px;
-    transition: background-color 0.2s;
 }
-
-.remove-btn:hover {
-    background-color: #cc0000;
-}
-
 .cart-footer {
     padding: 20px;
     border-top: 2px solid #f0f0f0;
 }
-
 .cart-total {
     display: flex;
     justify-content: space-between;
@@ -296,13 +244,11 @@ header h1 {
     font-weight: bold;
     margin-bottom: 20px;
 }
-
 #btn-finalize {
     width: 100%;
     padding: 15px;
     background-color: #25D366;
     color: white;
-    text-align: center;
     border: none;
     border-radius: 5px;
     font-size: 1.2rem;
@@ -310,23 +256,50 @@ header h1 {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
 #btn-finalize:hover {
     background-color: #128C7E;
 }
 
+/* 🎨 Rodapé */
+footer {
+    background-color: #d62828;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+footer a {
+    color: #fcc75c;
+    font-weight: bold;
+}
+
 
 /* ======================================= */
-/* !! 📱 SEÇÃO RESPONSIVA !! */
+/* 📱 SEÇÃO RESPONSIVA */
 /* ======================================= */
-
-/* Para tablets e celulares maiores */
 @media (max-width: 767px) {
     header {
         padding: 15px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 120px; /* Altura fixa para comportar os elementos */
     }
     header h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+    header p {
+        font-size: 0.9rem;
+        margin: 0;
+    }
+    .header-actions {
+        position: static; /* Remove o posicionamento absoluto */
+        transform: none; /* Remove a transformação */
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
     }
     .carousel-item img {
         height: 220px;
@@ -336,18 +309,14 @@ header h1 {
     }
     .cart-sidebar {
         width: 90%;
-        right: -100%; /* Garante que saia totalmente da tela */
-    }
-    .instagram-icon {
-        top: 10px;
-      left:10px;
-        font-size: 2.5rem;
-        width: 35px;
+        right: -100%;
     }
 }
 
-/* Para celulares menores */
 @media (max-width: 480px) {
+    header {
+        height: 110px;
+    }
     header h1 {
         font-size: 1.5rem;
     }
@@ -357,21 +326,21 @@ header h1 {
     .galeria-img {
         height: 150px;
     }
+    .social-icon {
+        font-size: 2rem;
+    }
+    .ifood-icon img {
+        width: 30px;
+    }
     .cart-icon {
-        font-size: 1.5rem;
-        padding: 5px;
-        right: 10px;
+        font-size: 2rem;
     }
     .cart-count {
-        width: 20px;
+        width: 24px;
         height: 24px;
         font-size: 0.8rem;
     }
-    .instagram-icon {
-        top: 10px;
-        left:10px;
-        font-size: 2rem;
-        width: 30px;
-        align-items:left;
-    }
 }
+
+
+/* 5521982832778 */
